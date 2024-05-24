@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  height: 7.4vh;
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .navbar {
+    height: 10vh;
+  }
+}
+
+.kidults-font {
+  font-size: 55px;
+  font-family: 'Minecrafter';
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #220c07;
+  content: attr(title);
+  -webkit-text-stroke: 0.05em #f34551;
+  text-shadow: 1px 1px 1px #f34551,
+    2px 2px 1px #f34551,
+    3px 3px 1px #f34551,
+
+    4px 4px 1px #f34551,
+    5px 5px 1px #f34551,
+    6px 6px 1px #f34551,
+    7px 7px 1px #f34551,
+    8px 8px 1px #f34551;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .kidults-font {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 760px) {
+  .kidults-font {
+    font-size: 35px;
+  }
+}
+
+@font-face {
+  font-family: "Minecrafter";
+  src: url("Minecrafter_Reg.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
