@@ -8,6 +8,11 @@
     <x-forms.form action="/dati">
 
 <div class="flex flex-col lg:gap-20 md:gap-12 gap-10">
+    <div class="relative z-0 w-full mb-4 bg-white flex">
+    <x-forms.inputformat name="negozio" type="text" id="negozio" required />
+    <x-forms.label for="negozio">Scegli il negozio*</x-forms.label>
+    </div>
+  
   <x-forms.input name="text" type="text" placeholder="Scegli il negozio*" class="lg:w-[20lvw] lg:h-11 md:w-[30lvw] md:h-10 w-[75lvw] h-10 " required />
   <x-forms.input name="name" type="text" placeholder="Nome*" class="lg:w-[20lvw] lg:h-11 md:w-[30lvw] md:h-10 w-[75lvw] h-10 " required />
 
@@ -15,7 +20,7 @@
 
   <x-forms.input name="email" type="email" placeholder="Email*" class="lg:w-[20lvw] lg:h-11 md:w-[30lvw] md:h-10 w-[75lvw] h-10 " required />
 
-  <x-forms.input name="number" type="text" placeholder="Cellulare*" class="lg:w-[20lvw] lg:h-11 md:w-[30lvw] md:h-10 w-[75lvw] h-10 " required />
+  <x-forms.input name="number" type="text" placeholder="Cellulare*" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"  class="lg:w-[20lvw] lg:h-11 md:w-[30lvw] md:h-10 w-[75lvw] h-10 " required />
 
   <x-forms.input name="data" type="date" placeholder="Data di nascita*" class="lg:w-[20lvw] lg:h-11 md:w-[30lvw] md:h-10 w-[75lvw] h-10 " required />
   <x-forms.input name="genere" type="text" placeholder="Genere*" class="lg:w-[20lvw] lg:h-11 md:w-[30lvw] md:h-10 w-[75lvw] h-10 " required />
