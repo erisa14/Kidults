@@ -1,5 +1,5 @@
-@props([
-'type' => 'text', 'name', 'id'
-])
 
-<input type={{ $type }} name={{ $name }} id={{ $id }} {{ $attributes->merge(['class' => 'block py-3 text-sm rounded-lg bg-transparent border-2 border-gray-300 dark:bg-gray-50 text-gray-700 dark:placeholder-gray-50 dark:text-white peer']) }} />
+
+@props(['type', 'id', 'placeholder'])
+
+<input type="{{ $type }}" id="{{ $id }}" placeholder="" {{ $attributes->merge(['class' => 'block rounded-lg px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-gray-200  appearance-none  focus:outline-none peer']) }} />
