@@ -14,7 +14,7 @@
       <div class="flex flex-col lg:gap-20 md:gap-12 gap-10">
         <x-forms.input name="email" type="email" placeholder="Email*" class="lg:w-[20lvw] lg:h-11 md:w-[30lvw] md:h-10 w-[75lvw] h-10 " required />
 
-        <x-buttons.mainbutton>richiedila subito</x-buttons.mainbutton>
+        <x-buttons.mainbutton class="px-5 py-2 text-xl">richiedila subito</x-buttons.mainbutton>
       </div>
 
     </x-forms.form>
