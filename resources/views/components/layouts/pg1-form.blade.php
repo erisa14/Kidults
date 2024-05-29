@@ -1,12 +1,4 @@
-@vite('resources/css/app.css')
-<x-navbar />
-<x-img.background-img class="flex md:flex-row flex-col justify-evenly">
-
-  @section('content')
-  <x-fonts.font-area />
-
-
-  <div class="bg-white rounded-3xl absolute text-black inset-y-0 md:justify-center justify-end  self-center lg:right-96 lg:w-[30lvw] lg:h-[40lvh] md:right-10 md:w-[40lvw] p-10 flex flex-col lg:gap-4 md:gap-3 w-[90lvw] md:mt-0 mt-32">
+<div class="bg-white rounded-3xl absolute text-black inset-y-0 md:justify-center justify-end  self-center lg:right-96 lg:w-[30lvw] lg:h-[40lvh] md:right-10 md:w-[40lvw] p-10 flex flex-col lg:gap-4 md:gap-3 w-[90lvw] md:mt-0 mt-32">
     <h1 class="text-[#f34551] md:text-3xl text-xl font-bold text-center lg:mb-6 md:mb-4 mb-6">Entra nell'area Kidults</h1>
     <h5 class=" font-semibold text-center lg:w-5/6  self-center leading-5">Inizia la richiesta inserendo la tua email, se non hai già la Fidelity Card ti chiederemo qualche dato aggiuntivo.</h5>
     <x-forms.form action="/">
@@ -20,6 +12,3 @@
     </x-forms.form>
 
   </div>
-
-  @endsection
-</x-img.background-img>

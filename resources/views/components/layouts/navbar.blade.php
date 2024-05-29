@@ -2,7 +2,7 @@
 
 
 <nav class="navbar ">
-  <div class=" md:flex hidden bg-white w-1/2  flex-row justify-end lg:pr-10 md:pr-7 lg:gap-5 p-2">
+  <div class=" md:flex hidden bg-white w-1/2  flex-row justify-end lg:pr-10 md:pr-7 pl-10 lg:gap-5 p-2">
     <div class="pr-6 border-r">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-12 lg:h-14 md:mt-2 mt-5 " viewBox="0 0 88.073 57.278">
@@ -27,7 +27,7 @@
         </svg>
       </a>
     </div>
-    <div class="flex gap-5 mt-4 ml-6">
+    <div class="flex lg:gap-5 md:gap-3 mt-4 ml-6">
       <img src="img/toys_center.png" alt="Toys Center" class="lg:w-32 h-[60%] md:w-24">
       <img src="img/bimbo.png" alt="Bimbo Store" class="lg:w-32 h-[60%] md:w-24">
       <img src="img/fao-schwarz.png" alt="Fao Schwarz" class="lg:w-32 h-[60%] md:w-24">
@@ -45,7 +45,7 @@
       <line x1="53" y1="13.2" x2="80" y2="13.2" stroke="#292f36" stroke-width="3" stroke-linecap="round" />
       <line x1="45" y1="16.1" x2="70" y2="16.1" stroke="white" stroke-width="3" stroke-linecap="round" />
       <line x1="74" y1="16.1" x2="78" y2="16.1" stroke="white" stroke-width="3" stroke-linecap="round" />
-      <line x1="50" y1="19" x2="80" y2="19" stroke="#292f36" stroke-width="3" stroke-linecap="round" />
+      <line x1="50" y1="19.3" x2="80" y2="19.3" stroke="#292f36" stroke-width="3.5" stroke-linecap="round" />
 
     </svg>
   </div>
