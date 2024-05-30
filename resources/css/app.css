@@ -53,13 +53,20 @@
 }
 
 
+.wrapper{
+  flex-shrink: 0;
+}
 
+.font{
+  font-family: "Montserrat", sans-serif;
+  src: url("Montserrat-VariableFont_wght.ttf") format("truetype");
+}
 
 .registrati{
   width:auto;
   height: auto;
   background-color: #9999A1;
-padding: 16 24;
+padding: 16 8;
  display: flex;
 }
 .registrati h1{
@@ -98,7 +105,7 @@ padding: 16 24;
   width: 96px;
   height: 80px;
 }
-/* CardToys css */
+
 .toggle-btn {
   display: none;
 }
@@ -195,4 +202,8 @@ padding: 16 24;
   }
   .st19 {
       fill: url(#path196_1_)
+  }
+
+  .line{
+    line-height: 1.3rem !important;
   }

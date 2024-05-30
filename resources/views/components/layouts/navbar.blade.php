@@ -1,8 +1,9 @@
 @vite('resources/css/app.css')
 
 
-<nav class="navbar ">
-  <div class=" md:flex hidden bg-white w-1/2  flex-row justify-end lg:pr-10 md:pr-7 pl-10 lg:gap-5 p-2">
+<nav class="navbar container">
+  <div class="flex flex-row justify-between" >
+  <div class=" md:flex bg-white  flex-row justify-end lg:pr-10 md:pr-7 pl-10 lg:gap-5 p-2">
     <div class="pr-6 border-r">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-12 lg:h-14 md:mt-2 mt-5 " viewBox="0 0 88.073 57.278">
@@ -28,13 +29,13 @@
       </a>
     </div>
     <div class="flex lg:gap-5 md:gap-3 mt-4 ml-6">
-      <img src="img/toys_center.png" alt="Toys Center" class="lg:w-32 h-[60%] md:w-24">
-      <img src="img/bimbo.png" alt="Bimbo Store" class="lg:w-32 h-[60%] md:w-24">
-      <img src="img/fao-schwarz.png" alt="Fao Schwarz" class="lg:w-32 h-[60%] md:w-24">
+      <img src="img/toys_center.png" alt="Toys Center" >
+      <img src="img/bimbo.png" alt="Bimbo Store" >
+      <img src="img/fao-schwarz.png" alt="Fao Schwarz">
     </div>
   </div>
-  <div class=" md:block hidden w-1/2 bg-[#292f36] ">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 100" class=" lg:-translate-x-52 md:-translate-x-52 lg:h-fit md:h-[369px]">
+  <div class=" bg-[#292f36] ">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 100" class="">
       <line x1="50" y1="1.5" x2="80" y2="1.5" stroke="#292f36" stroke-width="3" stroke-linecap="round" />
       <line x1="45" y1="4.5" x2="65" y2="4.5" stroke="white" stroke-width="3" stroke-linecap="round" />
       <line x1="69" y1="4.5" x2="75" y2="4.5" stroke="white" stroke-width="3" stroke-linecap="round" />
@@ -50,10 +51,10 @@
     </svg>
   </div>
 
+  </div>
 
 
-
-  <div class="md:hidden block w-[25%]">
+  <div class="md:hidden block">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 100">
       <line x1="0" y1="1.8" x2="12" y2="1.6" stroke="#292f36" stroke-width="6" />
       <line x1="12" y1="1.6" x2="70" y2="1.8" stroke="white" stroke-width="6" stroke-linecap="round" />
@@ -111,7 +112,7 @@
     </div>
   </div>
 
-  <div class="md:hidden block w-[25%]">
+  <div class="md:hidden block">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 100">
       <line x1="35" y1="1.8" x2="80" y2="1.6" stroke="#292f36" stroke-width="6" />
       <line x1="0" y1="1.6" x2="37" y2="1.8" stroke="white" stroke-width="6" stroke-linecap="round" />

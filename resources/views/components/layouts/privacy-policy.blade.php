@@ -1,4 +1,4 @@
-<x-text-divs.privacypolicy title="Dichiaro di aver letto ed accettato l'<u>Informativa sul trattamento dei dati personali</u> e di aver preso visione ed accettato il <u>Regolamento della Card</u>.*" description="" titleClass="text-[#1e4d9c] lg:text-[17px] leading-5 py-3 font-medium ">
+<x-text-divs.privacypolicy title="Dichiaro di aver letto ed accettato l'<u>Informativa sul trattamento dei dati personali</u> e di aver preso visione ed accettato il <u>Regolamento della Card</u>.*" description="" titleClass="text-[#1e4d9c] font lg:text-[17px] leading-5 py-3 font-medium ">
 </x-text-divs.privacypolicy>
 
 <x-text-divs.privacypolicy title="VUOI RICEVERE LE NOSTRE COMUNICAZIONI?" description="Acconsento a essere contattato/a dalla Società tramite posta ordinaria, email e/o notifiche push, SMS e/o MMS e/o applicazioni mobili di messaggistica

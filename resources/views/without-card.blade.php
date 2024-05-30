@@ -1,6 +1,6 @@
 @vite('resources/css/app.css')
 <x-layouts.navbar />
-<div class="md:flex flex-col lg:h-full h-fit bg-[#292F36]">
+<div class="md:flex flex-col font lg:h-full h-fit bg-[#292F36]">
     <div class=" text-white flex flex-col items-center justify-center gap-3 m-16">
         <h2 class="text-xl md:text-4xl font-bold tracking-wide">Benvenuto!</h2>
         <p class="lg:w-[35%] w-full justify-center text-center">Abbiamo appena inviato la tua card anche alla tua email e

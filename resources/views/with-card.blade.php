@@ -3,7 +3,7 @@
 
 <x-layouts.navbar />
 
-<div class="md:flex flex-col lg:h-full h-fit bg-[#292F36]">
+<div class="md:flex flex-col font lg:h-full h-fit bg-[#292F36]">
     <div class=" text-white flex flex-col items-center justify-center gap-3 m-16">
         <h1 class="text-center">Benvenuto/a nell'area Kidults.</h1>
         <div class="md:flex flex-row mt-8">

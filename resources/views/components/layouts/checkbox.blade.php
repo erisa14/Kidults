@@ -1,4 +1,5 @@
-<div {{ $attributes->merge(['class' => 'text-center md:space-y-3 space-y-5 leading-4 font-medium']) }}>
+<div {{ $attributes->merge(['class' => 'text-center font md:space-y-3 space-y-5 leading-4 font-medium']) }}>
+  
 <x-forms.checkbox class="toggle-btn" name="Costruzioni" type="checkbox" id="id1"></x-forms.checkbox>
 <x-forms.checkbox-label name="Costruzioni" for="id1"></x-forms.checkbox-label>
 <x-forms.checkbox class="toggle-btn" name="Giochi in scatola" type="checkbox" id="id2"></x-forms.checkbox>
