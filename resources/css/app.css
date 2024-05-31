@@ -3,10 +3,9 @@
 @tailwind utilities;
 
 .navbar {
-  display: flex;
-  justify-content: center;
-  height: 7.4vh;
+  /* height: 7.4vh; */
 }
+
 
 @media (min-width: 300px) and (max-width: 768px) {
   .navbar {
