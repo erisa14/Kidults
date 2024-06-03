@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.navbar {
-  /* height: 7.4vh; */
-}
+
 
 
 @media (min-width: 300px) and (max-width: 768px) {
@@ -14,12 +12,9 @@
 }
 
 .kidults-font {
-  font-size: 55px;
+  font-size: 65px;
   font-family: 'Minecrafter';
-  background-clip: border-box;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: #220c07;
-  content: attr(title);
   -webkit-text-stroke: 0.05em #f34551;
   text-shadow: 1px 1px 1px #f34551,
     2px 2px 1px #f34551,
@@ -34,7 +29,7 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .kidults-font {
-    font-size: 45px;
+    font-size: 85px;
   }
 }
 
