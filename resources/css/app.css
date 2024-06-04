@@ -29,7 +29,7 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .kidults-font {
-    font-size: 85px;
+    font-size: 60px;
   }
 }
 
@@ -201,3 +201,8 @@ padding: 16 8;
   .line{
     line-height: 1.3rem !important;
   }
+
+
+
+ 
+  

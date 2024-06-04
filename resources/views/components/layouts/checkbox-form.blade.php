@@ -1,5 +1,5 @@
 @vite('resources/css/app.css')
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <div class="absolute font  lg:inset-8 md:inset-0 md:-translate-y-0 -translate-y-24 self-center ">
     <div class=" md:p-2 max-w-md  m-3 md:flex flex-row lg:max-w-6xl lg:h-[92%] md:h-[95%] md:max-w-4xl relative mx-auto ">
         <div class="flex flex-col items-center bg-white rounded-3xl rounded-b-none md:rounded-b-3xl md:rounded-br-none md:rounded-e-none  md:pt-4 md:p-14 space-y-2">

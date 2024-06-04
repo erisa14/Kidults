@@ -1,3 +1,4 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <x-text-divs.privacypolicy title="Dichiaro di aver letto ed accettato l'<u>Informativa sul trattamento dei dati personali</u> e di aver preso visione ed accettato il <u>Regolamento della Card</u>.*" description="" titleClass="text-[#1e4d9c] font lg:text-[17px] leading-5 py-3 font-medium ">
 </x-text-divs.privacypolicy>
 

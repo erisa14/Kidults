@@ -1,3 +1,5 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <div {{ $attributes->merge(['class' => 'text-center font md:space-y-3 space-y-5 leading-4 font-medium']) }}>
   
 <x-forms.checkbox class="toggle-btn" name="Costruzioni" type="checkbox" id="id1"></x-forms.checkbox>

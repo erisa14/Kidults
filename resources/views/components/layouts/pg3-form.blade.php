@@ -1,3 +1,5 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <div class="bg-white md:w-[63%] font rounded-xl mx-auto mt-5">
     <h4 class=" text-right mr-10 py-8 font-semibold lg:text-base text-sm">*Campo obbligatorio</h4>
 
