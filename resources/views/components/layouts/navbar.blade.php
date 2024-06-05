@@ -28,7 +28,7 @@
           </svg>
         </a>
       </div>
-      <div class="grid grid-cols-3 col-span-2 items-center  gap-12 pl-6 py-2 pr-5 ">
+      <div class="grid grid-cols-3 col-span-2 items-center  gap-12 pl-6  pr-5 ">
         <img src="img/toys_center.png" alt="Toys Center">
         <img src="img/bimbo.png" alt="Bimbo Store" >
         <img src="img/fao-schwarz.png" alt="Fao Schwarz">
@@ -67,8 +67,8 @@
 
 
 
-  <div class="lg:hidden grid grid-cols-6 w-full">
-        <div class="col-span-1 aspect-[2/1] ">
+  <div class="lg:hidden grid grid-cols-6">
+        <div class="col-span-1">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 45" class="h-14 md:h-fit">
                 <line x1="0" y1="1.8" x2="12" y2="1.6" stroke="#292F36"
                     stroke-width="6" />
@@ -100,7 +100,7 @@
                     stroke-linecap="round" />
             </svg>
         </div>
-        <div class="grid grid-cols-3 col-span-4 lg:hidden min-h-fit">
+        <div class="grid grid-cols-3 col-span-4 lg:hidden h-auto">
             <div class="pr-6 border-r col-span-1 ">
                 <a href="/" class="flex justify-end">
                     <svg xmlns="http://www.w3.org/2000/svg" class="md:h-16 h-12 md:mt-3 pt-3" viewBox="0 0 90 60">
@@ -131,14 +131,14 @@
                 </a>
             </div>
             {{-- images sm-screen --}}
-            <div class="grid grid-cols-3 col-span-2 px-6 gap-6  pt-3">
+            <div class="grid grid-cols-3 col-span-2 px-6 gap-6   items-center">
                 <img src="img/t_c.png" alt="Toys Center" class="" >
                 <img src="img/b_s.png" alt="Bimbo Store" class="">
                 <img src="img/fao.png" alt="Fao Schwarz" class="">
             </div>
         </div>
         {{-- Right side nav --}}
-        <div class="col-span-1 ">
+        <div class="col-span-1 aspect-[2/1] ">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="43 0 57 45" class=" h-14 md:h-fit">
                 <line x1="90" y1="1.8" x2="100" y2="1.6" stroke="#292F36"
                     stroke-width="6" />

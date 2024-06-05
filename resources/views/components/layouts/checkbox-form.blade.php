@@ -1,20 +1,20 @@
 @vite('resources/css/app.css')
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<div class="absolute font  lg:inset-8 md:inset-0 md:-translate-y-0 -translate-y-24 self-center ">
-    <div class=" md:p-2 max-w-md  m-3 md:flex flex-row lg:max-w-6xl lg:h-[92%] md:h-[95%] md:max-w-4xl relative mx-auto ">
+<div  class="absolute font  lg:inset-8 md:inset-0  top-2 lg:self-center ">
+    <div id="imgdiv" class=" md:p-2 max-w-md  m-3 md:flex flex-row  relative mx-auto ">
         <div class="flex flex-col items-center bg-white rounded-3xl rounded-b-none md:rounded-b-3xl md:rounded-br-none md:rounded-e-none  md:pt-4 md:p-14 space-y-2">
             <h2 class="text-[#F34551] pt-7 tracking-tight  md:text-3xl text-[23px] font-[750]">Possiedi già una Card Toys Center</h2>
             <h5 class="text-[#F34551] text-lg tracking-tight font-medium md:text-xl">Prima di procedere...</h5>
             <p class="md:w-[68%] w-[78%] text-center tracking-wide md:tracking-normal leading-5 text-base md:text-sm font-semibold">Seleziona qui sotto le aree di tuo interesse per ricevere offerte in linea con le tue preferenze.</p>
 
-            <x-layouts.checkbox class="w-[90%] " />
+            <x-layouts.checkbox/>
 
 
             <div class="flex flex-col space-y-3 ">
                 <div class="self-center mt-4"> <x-buttons.mainbutton class="py-2 px-8 text-2xl">CONFERMA</x-buttons.mainbutton>
                 </div>
                 <a href="#" class="self-center md:mb-0 mb-2 text-black text-sm  font-medium  underline">Annulla</a>
-                <p class="self-center md:w-full md:mb-0 mb-2 text-center w-[75%] text-base md:text-sm font-medium">Riceverai una mail di conferma all'indirizzo test@example.it</p>
+                <p class="self-center  md:mb-0 mb-2 text-center  text-base md:text-sm font-medium">Riceverai una mail di conferma all'indirizzo test@example.it</p>
             </div>
         </div>
         <div class="flex flex-col rounded-3xl md:rounded-s-none md:rounded-tr-3xl rounded-t-none  bg-[#E6E6E9] justify-center w-full md:w-[80%]">
@@ -47,3 +47,21 @@
             </div>
         </div>
     </div>
+</div>
+    <div id="dynamicHeightDiv"  class="lg:hidden flex bg-[#292F36]"></div>
+
+
+    <script>
+  const dynamicHeightDiv = document.getElementById('dynamicHeightDiv');
+    const figureElement = document.getElementById('imgdiv');
+
+    function updateDivHeight() {
+    
+        const totalContentHeight=figureElement.scrollHeight -620;
+        
+        dynamicHeightDiv.style.height = `${totalContentHeight}px`;
+        console.log(dynamicHeightDiv)
+    }
+    updateDivHeight();
+    window.addEventListener('resize', updateDivHeight);
+    </script>

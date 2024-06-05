@@ -1,18 +1,18 @@
 @vite('resources/css/app.css')
 <div class="registrati font flex flex-col  justify-center bg-[#9999A1] ">
-  <h1 class="md:text-xl hidden md:flex  text-[rgb(228,228,228)] text-sm  md:translate-x-[20%] ">Perché registrarsi?</h1>
-  <h2 class="text-xl md:hidden translate-x-[6%] flex font-semibold tracking-wide text-[rgb(231,231,231)]">Perché registrarsi?</h1>
-  <div class="lg:flex md:flex-row flex-col  gap-14 card-position pb-8 ">
-    <div class="bg-[#E6E6E9] rounded-xl flex flex-col gap-16 p-2 lg:m-0 m-3 lg:w-[21rem] h-[17rem]">
+  <h1 class="text-xl hidden lg:flex  text-[rgb(228,228,228)]  md:translate-x-[20%] lg:translate-x-[0%] xl:translate-x-[13%]">Perché registrarsi?</h1>
+  <h2 class="md:text-2xl text-lg lg:hidden translate-x-6 flex font-semibold tracking-wide text-[rgb(231,231,231)]">Perché registrarsi?</h1>
+  <div class="lg:flex md:flex-row flex-col lg:gap-24 card-position pb-8 ">
+    <div class="bg-[#E6E6E9] rounded-xl flex flex-col gap-16 p-2 lg:m-0 m-3 lg:w-[24rem] h-[17rem]">
       <img class="card-img-top md:w-32 w-32 h-20 mx-auto mt-10 md:h-24" src="img\card.png" alt="Card image cap">
       <p class=" text-center line mt-2  font-bold text-[#292F36] text-base pb-1 md:text-lg  mx-auto">Tutti i vantaggi della Carta Fedeltà Toys Center</p>
     </div>
-    <div class="bg-[#E6E6E9] gap-20 rounded-xl flex flex-col p-3 lg:m-0 m-3  lg:w-[21rem] h-[17rem]">
+    <div class="bg-[#E6E6E9] gap-20 rounded-xl flex flex-col p-3 lg:m-0 m-3  lg:w-[24rem] h-[17rem]">
         <svg xmlns="http://www.w3.org/2000/svg"  class=" h-44 mx-auto mt-6 -rotate-[22deg] md:w-32 md:h-24" viewBox="0 0 24 20" fill="none" stroke="#2E343B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
           <g id="SVGRepo_iconCarrier"> <path d="M3 11l18-5v12L3 14v-3z"></path> <path d="M11.6 16.8a3 3 0 11-5.8-1.6"></path> </g></svg>
       <p class="text-center line  font-bold text-[#292F36] text-base pb-1 md:text-lg">Ricevi solo le offerte e le comunicazioni per i giochi 18+</p>
     </div>
-    <div class="bg-[#E6E6E9] rounded-xl flex flex-col gap-14 lg:m-0 m-3 p-3 lg:w-[21rem] h-[17rem] ">
+    <div class="bg-[#E6E6E9] rounded-xl flex flex-col gap-14 lg:m-0 m-3 p-3 lg:w-[24rem] h-[17rem] ">
       <svg viewBox="0 0 24 24" fill="none" class="  h-52 mt-6" xmlns="http://www.w3.org/2000/svg">
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>

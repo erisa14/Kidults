@@ -100,7 +100,7 @@
           <h1 class="text-left text-[#f34551] font-bold lg:text-3xl md:text-xl">I tuoi interesi</h1>
           <h3 class=" font-semibold mt-4 text-lg text-left">Seleziona qui sotto le aree di tuo interesse per ricevere offerte in linea con le tue preferenze. </h3>
 
-          <x-layouts.checkbox class="w-[55%] mx-auto"/>
+          <x-layouts.checkbox class="md:w-[54%] w-full mx-auto"/>
         </div>
 
 

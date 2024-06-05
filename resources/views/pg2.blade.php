@@ -2,10 +2,6 @@
 <x-layouts.navbar />
 
 
-  <x-layouts.pg2-section/>
-
-  <div  class="lg:hidden flex bg-[#292F36] h-96"></div>
-
+  <x-layouts.pg2-section id="imgdiv"/>
 <x-cards/>
 <x-partner/>
- 

@@ -105,13 +105,11 @@ padding: 16 8;
 }
 .toggle-label {
   display: inline-block;
-  padding: 16px 24px;
   border: 1px solid #ccc;
   border-radius: 30px;
   cursor: pointer;
   position: relative;
-  margin: 8;
-  font-size:15px;
+  margin: 6;
 }
 .toggle-label.selected {
   border-color: green;
@@ -120,10 +118,10 @@ padding: 16 8;
 .toggle-label.selected::after {
   content: 'x';
   position: absolute;
-  top: 40%;
-  left: 9%;
+  top: 50%;
+  left: 10%;
   transform: translate(-50%, -50%);
-  font-size: 24px;
+  font-size: 20px;
   color: red;
 }
 @media (min-width: 768px) {
