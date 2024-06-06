@@ -1,7 +1,7 @@
 @vite('resources/css/app.css')
 <div class="partner font w-full md:flex flex-col">
-    <h1 class="lg:w-[60%] lg:mx-auto text-xl mb-16 md:text-3xl font-semibold text-[#B3B4B9]">I nostri partner</h1>
-    <div class="flex lg:justify-evenly w-[70%] mx-auto lg:gap-0 md:gap-24 gap-12  flex-wrap">
+    <h1 class="xl:pl-[14%] text-xl mb-16 md:text-3xl font-semibold text-[#B3B4B9]">I nostri partner</h1>
+    <div class="flex lg:justify-evenly w-[85%] mx-auto lg:gap-0 md:gap-24 gap-12  flex-wrap">
         <svg xmlns="http://www.w3.org/2000/svg" class="image" viewBox="0.185 0.015 300.438 300.44">
             <path fill="#fff" d="M2.225 2.025h296.431v296.422H2.225z" />
             <path
