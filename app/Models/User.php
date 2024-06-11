@@ -19,8 +19,11 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
-        'password',
+        'negozio', // Add this line
+        'lastname', // Add this line
+        'date', // Add this line
     ];
+    
 
     /**
      * The attributes that should be hidden for serialization.
@@ -28,7 +31,6 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $hidden = [
-        'password',
         'remember_token',
     ];
 
@@ -41,7 +43,13 @@ class User extends Authenticatable
     {
         return [
             'email_verified_at' => 'datetime',
-            'password' => 'hashed',
         ];
+    }
+
+
+
+    public function choices()
+    {
+        return $this->belongsToMany(Interessi::class);
     }
 }
