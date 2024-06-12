@@ -6,7 +6,7 @@
 <div class="bg-[#292f36] mx-auto p-5">
   <h1 class="text-white xl:text-3xl lg:text-2xl text-xl text-left xl:translate-x-[15%] lg:translate-x-[10%] py-8 font-bold">Compila questi dati per effettuare la registrazione. </h1>
 
- <x-layouts.pg3-form/>
+ <x-layouts.pg3-form  :interessi="$interessi"/>
 
 </div>
 

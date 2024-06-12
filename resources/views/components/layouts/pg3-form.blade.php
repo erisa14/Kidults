@@ -38,8 +38,8 @@
 
           <div class="relative md:w-[45%]">
             <span class="border-r absolute z-20 border-gray-400  left-0 md:top-5 font-semibold md:h-7 h-5 top-4 px-3 md:text-base text-sm">+39</span>
-            <x-forms.inputformat name="phone" type="text" id="phone" class="md:h-16 pl-20" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
-            <x-forms.label for="phone" class="ml-10">Cellulare</x-forms.label>
+            <x-forms.inputformat name="cellulare" type="text" id="cellulare" class="md:h-16 pl-20" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
+            <x-forms.label for="cellulare" class="ml-10">Cellulare</x-forms.label>
             <div class="pt-5 pb-3 rounded-lg w-full lg:px-5 md:px-3 px-5 -translate-y-2  border border-t-0">
               <h2 class="flex gap-1 font-bold text-sm "><svg xmlns="http://www.w3.org/2000/svg" fill="#f34551" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-5">
                   <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
@@ -61,7 +61,7 @@
 
           <div class="relative md:w-[45%] ">
 
-            <x-forms.select class="md:h-16 pt-5" placeholder="" id="gender" :options="[
+            <x-forms.select class="md:h-16 pt-5" placeholder="" id="gender" name="gender" :options="[
         ''=>'',
         'Female' => 'Female',
         'Male' => 'Male'
@@ -77,13 +77,13 @@
 
         <div class="flex  md:flex-row flex-col gap-6">
           <div class="relative md:w-[45%] ">
-            <x-forms.inputformat name="indirizio" type="text" id="indirizio" class="md:h-16" />
-            <x-forms.label for="indirizio">Indirizio</x-forms.label>
+            <x-forms.inputformat name="indirizzo" type="text" id="indirizzo" class="md:h-16" />
+            <x-forms.label for="indirizzo">Indirizzo</x-forms.label>
           </div>
 
           <div class="relative lg:w-[16%] md:w-[18%] ">
-            <x-forms.inputformat name="nr-civico" type="text" id="nr-civico" class="md:h-16" />
-            <x-forms.label for="nr-civico" class="lg:ml-0 md:-ml-4">Nr.civico</x-forms.label>
+            <x-forms.inputformat name="nr-_ivico" type="text" id="nr_civico" class="md:h-16" />
+            <x-forms.label for="nr_civico" class="lg:ml-0 md:-ml-4">Nr.civico</x-forms.label>
           </div>
 
           <div class="relative lg:w-[27%] md:w-[22%]">
@@ -103,7 +103,7 @@
           <h1 class="text-left text-[#f34551] font-bold lg:text-3xl md:text-xl">I tuoi interesi</h1>
           <h3 class=" font-semibold mt-4 md:text-lg text-sm text-left">Seleziona qui sotto le aree di tuo interesse per ricevere offerte in linea con le tue preferenze. </h3>
 
-          <x-layouts.checkbox class="xl:w-[45%] lg:w-[100%] md:w-[80%] w-[105%] mx-auto"/>
+          <x-layouts.checkbox :interessi="$interessi" class="xl:w-[45%] lg:w-[100%] md:w-[80%] w-[105%]  mx-auto" id="interessi" name="interessi"/>
         </div>
 
 

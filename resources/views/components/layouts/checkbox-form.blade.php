@@ -1,4 +1,6 @@
 @vite('resources/css/app.css')
+@props(['interessi'])
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <div class="absolute font  xl:inset-8 md:inset-0 inset-0 self-center ">
     <div id="img-div" class=" xl:p-2  m-3 flex lg:flex-row flex-col  relative mx-auto 2xl:max-w-[73%] xl:max-w-[98%] lg:max-w-[90%] md:max-w-[80%] max-w-[90%]  ">
@@ -7,7 +9,7 @@
             <h5 class="text-[#F34551] text-base tracking-tight font-medium md:text-xl">Prima di procedere...</h5>
             <p class="md:w-[68%] w-[78%] text-center tracking-wide md:tracking-normal leading-5 text-sm md:text-sm font-semibold">Seleziona qui sotto le aree di tuo interesse per ricevere offerte in linea con le tue preferenze.</p>
 
-            <x-layouts.checkbox class=" xl:w-[95%] lg:w-[120%]" />
+            <x-layouts.checkbox :interessi="$interessi" class=" xl:w-[90%] lg:w-[120%]"/>
 
 
             <div class="flex flex-col space-y-3 ">

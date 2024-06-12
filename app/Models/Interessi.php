@@ -9,7 +9,7 @@ class Interessi extends Model
 {
     use HasFactory;
 
-
+    protected $table = 'interessi'; 
 
     public function users()
     {
