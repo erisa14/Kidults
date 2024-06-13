@@ -5,28 +5,27 @@ use App\Models\User;
 use App\Models\Interessi;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 class LoginController extends Controller
 {
-    public function processForm(Request $request)
-    {
+    
+
+
+public function processForm(Request $request)
+{
+        if (Auth::check()) {
+            return redirect('/page2');
+        }
         $request->validate([
             'email' => 'required|email',
         ]);
         $user = User::where('email', $request->email)->first();
         if ($user) {
-            return redirect('page2');
+            Auth::login($user);
+            return redirect('/page2');
         } else {
-            return redirect('dati');
+            return redirect('/dati')->with('alert', 'This email isn\'\t registered!');
         }
-    }
-    public function showCardToysCenter()
-    {
-        $interessi = Interessi::all();
-        return view('pg2', ['interessi' => $interessi]);
-    }
-    public function showDati()
-    {
-        $interessi = Interessi::all();
-        return view('dati', ['interessi' => $interessi]);
     }
 }

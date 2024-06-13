@@ -4,7 +4,9 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Models\Interessi;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 
 
@@ -33,7 +35,7 @@ class AuthController extends Controller
                         ->withInput();
     }
 
-    $user = new User([
+    $user = User::create([
         'negozio' => $request->get('negozio'),
         'lastname' => $request->get('lastname'),
         'name' => $request->get('name'),
@@ -46,9 +48,17 @@ class AuthController extends Controller
         'cap'=> $request->get('cap'),
         'provinca'=> $request->get('provinca'),
     ]);
-    $user->save();
 
-    return redirect('/no-card')->with('message', 'Registered successfully, please login...');
+    if ($request->has('interessi')) {
+        $interests = Interessi::whereIn('id', $request->input('interessi'))->get();
+        $user->choices()->attach($interests);
+    }
+
+    if ($user) {
+        Auth::login($user);
+        return redirect('/no-card');
+
+    }
 }
 
 }

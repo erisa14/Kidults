@@ -5,11 +5,10 @@
 
 <div {{ $attributes->merge(['class'=> 'text-center font md:space-y-3 space-y-5 leading-4 font-medium']) }}>
 
-  @foreach($interessi as $interesse)
-        <x-forms.checkbox class="toggle-btn" name="{{ $interesse->interessi }}" type="checkbox" id="id{{ $interesse->id }}"></x-forms.checkbox>
-        <x-forms.checkbox-label name="{{ $interesse->interessi }}" for="id{{ $interesse->id }}" class="lg:px-7 px-4 py-4 lg:text-base text-sm"></x-forms.checkbox-label>
-    @endforeach
-
+    @foreach($interessi as $interesse)
+    <x-forms.checkbox class="toggle-btn" name="interessi[]" type="checkbox" id="interesse{{ $interesse->id }}" value="{{ $interesse->id }}"></x-forms.checkbox>
+    <x-forms.checkbox-label name="{{ $interesse->interessi }}" for="interesse{{ $interesse->id }}" class="lg:px-7 px-4 py-4 lg:text-base text-sm"></x-forms.checkbox-label>
+@endforeach
 </div>
 <script>
     document.addEventListener("DOMContentLoaded", function() {

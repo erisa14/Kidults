@@ -11,11 +11,7 @@ class User extends Authenticatable
 {
     use HasFactory, Notifiable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
+    
     protected $fillable = [
         'name',
         'email',
@@ -32,20 +28,12 @@ class User extends Authenticatable
     ];
     
 
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array<int, string>
-     */
+   
     protected $hidden = [
         'remember_token',
     ];
 
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
+    
     protected function casts(): array
     {
         return [
@@ -57,6 +45,6 @@ class User extends Authenticatable
 
     public function choices()
     {
-        return $this->belongsToMany(Interessi::class);
+        return $this->belongsToMany(Interessi::class, 'user_interessi');
     }
 }
