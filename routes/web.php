@@ -34,3 +34,8 @@ Route::get('/page2', [InteressiController::class, 'pg2']);
 Route::post('/login', [LoginController::class, 'processForm'])->name('login');
 Route::get('/', function () { return view('home'); });
 Route::get('/dati', [InteressiController::class, 'dati']);
+
+
+Route::get('/getUserInterests', [InteressiController::class, 'getUserInterests']);
+Route::post('/updateInterests', [InteressiController::class, 'updateInterests'])->name('updateInterests');
+

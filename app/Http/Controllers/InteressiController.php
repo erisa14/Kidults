@@ -2,11 +2,44 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Interessi;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class InteressiController extends Controller
 {
+
+    public function updateInterests(Request $request)
+{
+    $user = Auth::user();
+
+    $existingInterestIds = $user->choices()->pluck('interessi_id')->toArray();
+    $newlySelectedInterestIds = $request->input('interessi', []);
+
+    $interestsToRemove = array_intersect($existingInterestIds, $newlySelectedInterestIds);
+    if (!empty($interestsToRemove)) {
+        $user->choices()->detach($interestsToRemove);
+    }
+
+    $interestsToAdd = array_diff($newlySelectedInterestIds, $existingInterestIds);
+    if (!empty($interestsToAdd)) {
+        $interestsToAdd = Interessi::whereIn('id', $interestsToAdd)->get();
+        foreach ($interestsToAdd as $interest) {
+            $user->choices()->attach($interest->id);
+        }
+    }
+
+    return redirect('/no-card');
+}
+
+public function getUserInterests(){
+    $user = Auth::user();
+    $existingInterestIds = $user->choices()->pluck('interessi_id')->toArray();
+    $interessi = Interessi::all();
+    return response()->json($existingInterestIds);
+}
+ 
     public function checkbox()
     {
         $interessi = Interessi::all();
@@ -45,3 +78,5 @@ class InteressiController extends Controller
         return view('components.layouts.pg3-form', ['interessi' => $interessi]);
     }
 }
+
+

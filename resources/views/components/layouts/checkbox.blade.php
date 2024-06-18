@@ -1,14 +1,22 @@
-
+@vite('resources/css/app.css')
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<div {{ $attributes->merge(['class'=> 'text-center font md:space-y-3 space-y-5 leading-4 font-medium']) }}>
+<div {{ $attributes->merge(['class' => 'text-center font md:space-y-3 space-y-5 leading-4 font-medium']) }}>
 
-    @foreach($interessi as $interesse)
+    {{-- @foreach ($interessi as $interesse)
     <x-forms.checkbox class="toggle-btn" name="interessi[]" type="checkbox" id="interesse{{ $interesse->id }}" value="{{ $interesse->id }}"></x-forms.checkbox>
     <x-forms.checkbox-label name="{{ $interesse->interessi }}" for="interesse{{ $interesse->id }}" class="lg:px-7 px-4 py-4 lg:text-base text-sm"></x-forms.checkbox-label>
-@endforeach
+   
+@endforeach --}}
+
+    @foreach ($interessi as $interesse)
+        <x-forms.checkbox class="toggle-btn" name="interessi[]" type="checkbox" id="interesse{{ $interesse->id }}"
+            value="{{ $interesse->id }}"></x-forms.checkbox>
+        <x-forms.checkbox-label name="{{ $interesse->interessi }}" for="interesse{{ $interesse->id }}"
+            class="lg:px-7 px-4 py-4 lg:text-base text-sm"></x-forms.checkbox-label>
+    @endforeach
 </div>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -25,5 +33,36 @@
                 }
             });
         });
+    });
+
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch('/getUserInterests')
+            .then(response => response.json())
+            .then(existingInterestIds => {
+                const elements = document.querySelectorAll('.toggle-label');
+                existingInterestIds.forEach(id => {
+                    const checkbox = document.querySelector(`#interesse${id}`);
+                    const label = document.querySelector(`[for='interesse${id}']`);
+
+
+                    if (label && checkbox) {
+                        checkbox.addEventListener('change', function() {
+                            if (this.checked) {
+                                label.classList.add('selected');
+
+                                label.style.backgroundColor = '#D6F5D6'; // Green background
+                            } else {
+                                label.style.backgroundColor = 'white'; // White background
+                            }
+                        });
+                        if (existingInterestIds.includes(id)) {
+                            label.classList.add('selected');
+                        }
+                    }
+                });
+            })
+            .catch(error => console.error('Error:', error));
     });
 </script>

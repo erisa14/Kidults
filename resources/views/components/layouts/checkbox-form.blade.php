@@ -13,7 +13,8 @@
             <p
                 class="md:w-[68%] w-[78%] text-center tracking-wide md:tracking-normal leading-5 text-sm md:text-sm font-semibold">
                 Seleziona qui sotto le aree di tuo interesse per ricevere offerte in linea con le tue preferenze.</p>
-
+                <x-forms.form action="{{ route('updateInterests') }}">
+                    @csrf
             <x-layouts.checkbox :interessi="$interessi" class=" xl:w-[90%] lg:w-[120%]" />
 
 
@@ -26,6 +27,7 @@
                 <p class="self-center  lg:mb-0 mb-2 text-center  text-base lg:text-sm font-medium">Riceverai una mail di
                     conferma all'indirizzo test@example.it</p>
             </div>
+                </x-forms.form>
         </div>
         <div
             class="flex flex-col rounded-3xl lg:rounded-s-none lg:rounded-tr-3xl rounded-t-none  bg-[#E6E6E9] justify-center w-full">
