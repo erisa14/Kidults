@@ -60,9 +60,15 @@ public function getUserInterests(){
     }
     
     public function pg2()
-    {
+    {   
         $interessi = Interessi::all();
+        if (!Auth::check()) {
+        return redirect('/');
+    }
+    else{
         return view('pg2', ['interessi' => $interessi]);
+
+    }
     }
 
     public function dati()

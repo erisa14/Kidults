@@ -112,9 +112,9 @@
             </div>
             {{-- images sm-screen --}}
             <div class="grid grid-cols-3 col-span-2 mx-auto  items-center sm:justify-around sm:w-auto md:gap-12 sm:gap-8 gap-2 pl-6">
-                <img src="img/t_c.png" alt="Toys Center" class="w-full h-12 md:h-20 p-1 aspect-[2/1]">
-                <img src="img/b_s.png" alt="Bimbo Store" class="w-full h-12 md:h-20 p-1 aspect-[2/1]">
-                <img src="img/fao.png" alt="Fao Schwarz" class="w-full h-12 md:h-20 p-1 aspect-[2/1]">
+                <img src="img/t_c.png" alt="Toys Center" class="w-full h-12 md:h-20 p-1 ">
+                <img src="img/b_s.png" alt="Bimbo Store" class="w-full h-12 md:h-20 p-1 ">
+                <img src="img/fao.png" alt="Fao Schwarz" class="w-full h-12 md:h-20 p-1">
             </div>
         </div>
         {{-- Right side nav --}}

@@ -2,18 +2,15 @@
 
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\CardController;
 use App\Http\Controllers\InteressiController;
 
 use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/no-card', function(){
-    return view('without-card');
-});
-Route::get('/card', function(){
-    return view('with-card');
-});
+Route::get('/no-card', [CardController::class, 'withoutCard']);
+Route::get('/card', [CardController::class, 'withCard']);
 
 Route::post('/register', [AuthController::class, 'store'])->name('register');
 
