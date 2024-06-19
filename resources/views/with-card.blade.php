@@ -1,5 +1,6 @@
 @vite('resources/css/app.css')
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<div class=" overflow-hidden">
 <x-layouts.navbar />
 <div class="lg:flex flex-col lg:h-full h-fit bg-[#292F36]">
     <div class=" text-white flex flex-col items-center justify-center lg:gap-3 lg:m-20">
@@ -148,6 +149,4 @@
         </div>
     </div>
 </div>
-<div class=" overflow-hidden">
-
 </div>

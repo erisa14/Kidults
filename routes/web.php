@@ -14,9 +14,6 @@ Route::get('/card', [CardController::class, 'withCard']);
 
 Route::post('/register', [AuthController::class, 'store'])->name('register');
 
-
-
-
 Route::get('/checkbox', [InteressiController::class, 'checkbox']);
 Route::get('/checkbox-form',[InteressiController::class, 'checkbox_form']);
 Route::get('/pg2-section', [InteressiController::class, 'pg2Section']);
@@ -35,4 +32,3 @@ Route::get('/dati', [InteressiController::class, 'dati']);
 
 Route::get('/getUserInterests', [InteressiController::class, 'getUserInterests']);
 Route::post('/updateInterests', [InteressiController::class, 'updateInterests'])->name('updateInterests');
-

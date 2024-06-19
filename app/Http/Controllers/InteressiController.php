@@ -84,5 +84,3 @@ public function getUserInterests(){
         return view('components.layouts.pg3-form', ['interessi' => $interessi]);
     }
 }
-
-
